@@ -1,7 +1,22 @@
+:root {
+    --font-family-a: "MSL Stoneleigh", "Times New Roman", serif;
+    --font-family-b: "Nunito Sans", "Trebuchet MS", sans-serif;
+    --font-family-c: "MSL Stoneleigh", "Times New Roman", serif;
+}
+
+h1{
+    font-family: var(--font-family-a);
+    font-size: 32px;
+    color: pink;
+    text-align: center;
+    
+}
 .container {
     display: flex;
     flex-direction: row; /* lines cards up side by side */
+    justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card-img {
@@ -12,4 +27,12 @@
 
 .card{
     border: 1px #e0e0e0 solid;
+}
+
+.card-title {
+    font-family: var(--font-family-a);
+    font-size: 14px;
+    color: pink;
+    font-weight: lighter;
+   
 }
